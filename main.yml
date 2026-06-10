@@ -1,7 +1,0 @@
-# CI CD Script Test
-
-on:
-  push:
-
-  script: |
-    console.log('This is CI CD Script test');

@@ -1,17 +1,20 @@
-# CI CD Script Test
-
 name: CI CD Script Test
 
 on:
   push:
-    branches: [ main, master ]
+    branches: [main, master]
   pull_request:
-    branches: [ main, master ]
-    
-jobs:
-   test-and-deploy:
-       runs-on: ubuntu-latest
-       timeout-minutes: 60
+    branches: [main, master]
 
-  script: |
-    console.log('This is CI CD Script test');
+jobs:
+  test-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run JavaScript
+        run: |
+          node -e "console.log('This is CI CD Script test');"
