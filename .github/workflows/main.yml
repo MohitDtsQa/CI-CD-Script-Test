@@ -9,7 +9,7 @@ on:
 jobs:
   test-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 0.1
 
     steps:
       - name: Checkout repository
