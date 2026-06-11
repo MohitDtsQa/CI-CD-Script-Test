@@ -21,4 +21,4 @@ jobs:
       
       - name: Check Node.Js Version
         run: |
-          node -e "node -v"
+          node -v
