@@ -70,7 +70,7 @@ on:
 
 on:
   schedule:
-    - cron: "0 2 * * *"
+    - cron: "0 2 * * *"     // "Minutes  Hours  Date  Month  Day"
 
 **Example:**
     Every night

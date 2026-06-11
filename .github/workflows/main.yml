@@ -5,6 +5,9 @@ on:
     branches: [main, master]
   pull_request:
     branches: [main, master]
+  fork:
+  schedule:
+    - cron: "0 1 * * *"  
 
 jobs:
   test:
@@ -22,3 +25,7 @@ jobs:
       - name: Check Node.Js Version
         run: |
           node -v
+      
+      - name: Install node package manager
+        run: |
+          npm install
