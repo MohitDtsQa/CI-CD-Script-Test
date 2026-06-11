@@ -7,7 +7,7 @@ on:
     branches: [main, master]
 
 jobs:
-  test-and-deploy:
+  test:
     runs-on: ubuntu-latest
     timeout-minutes: 0.01
 
