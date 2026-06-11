@@ -18,3 +18,7 @@ jobs:
       - name: Run JavaScript
         run: |
           node -e "console.log('This is CI CD Script test');"
+      
+      - name: Check Node.Js Version
+        run: |
+          node -e "node -v"
