@@ -5,8 +5,8 @@ steps:          //
 
 ## Events of WorkFlow under 'on:'
 
-| Event                 | When it Runs                           |
-| --------------------- | -------------------------------------- |
+| Event                   | When it Runs                           |
+| ----------------------- | -------------------------------------- |
 | `push`                | Code is pushed to a branch             |
 | `pull_request`        | PR is opened, updated, reopened        |
 | `workflow_dispatch`   | Manual trigger from GitHub UI          |
@@ -26,9 +26,10 @@ steps:          //
 | `deployment_status`   | Deployment status changed              |
 | `workflow_call`       | Called by another workflow             |
 
-_____________________________________________
+---
 
 #### 1. push
+
 on:
   push:
     branches:
@@ -42,6 +43,7 @@ on:
     Run Unit Tests
 
 #### 2. pull_request
+
 on:
   pull_request:
     branches:
@@ -55,6 +57,7 @@ on:
     Allow Merge
 
 #### 3. workflow_dispatch
+
 on:
   workflow_dispatch:
 
@@ -64,6 +67,7 @@ on:
     Deploy QA Environment
 
 #### 4. schedule
+
 on:
   schedule:
     - cron: "0 2 * * *"
@@ -74,6 +78,7 @@ on:
     Run Regression Suite
 
 #### 5. workflow_run
+
 Workflow A:
 name: Build
 
@@ -88,6 +93,7 @@ on:
     Deploy Starts
 
 #### 6. repository_dispatch
+
 Repository A:
 React App
 
@@ -104,6 +110,7 @@ Playwright Tests
 This is exactly the scenario you asked about earlier.
 
 #### 7. release
+
 on:
   release:
     types:
@@ -115,6 +122,7 @@ on:
     Deploy Production
 
 #### 8. create
+
 on:
   create:
 
@@ -124,6 +132,7 @@ on:
     Create QA Environment
 
 #### 9. delete
+
 on:
   delete:
 
@@ -133,6 +142,7 @@ on:
     Destroy QA Environment
 
 #### 10. issues
+
 on:
   issues:
 
@@ -142,6 +152,7 @@ on:
     Send Teams Notification
 
 #### 11. issue_comment
+
 on:
   issue_comment:
 
@@ -152,6 +163,7 @@ on:
     Run Tests Again
 
 #### 12. pull_request_review
+
 on:
   pull_request_review:
 
@@ -161,6 +173,7 @@ on:
     Start Deployment
 
 #### 13. pull_request_target
+
 on:
   pull_request_target:
 
@@ -172,6 +185,7 @@ on:
 Used mostly for open-source projects.
 
 #### 14. fork
+
 on:
   fork:
 
@@ -183,6 +197,7 @@ on:
 Rarely used.
 
 #### 15. watch
+
 on:
   watch:
 
@@ -194,6 +209,7 @@ on:
 Rarely used.
 
 #### 16. deployment
+
 on:
   deployment:
 
@@ -203,6 +219,7 @@ on:
     Start Infrastructure Provisioning
 
 #### 17. deployment_status
+
 on:
   deployment_status:
 
@@ -212,6 +229,7 @@ on:
     Notify Team
 
 #### 18. workflow_call
+
 Reusable Workflow:
 on:
   workflow_call:
