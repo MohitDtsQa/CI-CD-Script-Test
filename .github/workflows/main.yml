@@ -8,12 +8,12 @@ on:
   # fork:
   workflow_dispatch:
   schedule:
-    - cron: "40 7 * * 5"  
+    - cron: "35 8 * * 5"  
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 0.01
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
