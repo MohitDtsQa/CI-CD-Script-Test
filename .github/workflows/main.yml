@@ -33,7 +33,7 @@ jobs:
         
       - name: Check Java Version
         run: |
-          java -v
+          java -version
       
       # - name: Install node package manager
       #   run: |
