@@ -3,12 +3,12 @@ name: CI CD Script Test
 on:
   # push:
   #   branches: [main, master]
-  pull_request:
-    branches: [main, master]
+  # pull_request:
+  #   branches: [main, master]
   # fork:
-  workflow_dispatch:
+  # workflow_dispatch:
   schedule:
-    - cron: "35 8 * * 5"  
+    - cron: "40 8 * * *"  
 
 jobs:
   test:
