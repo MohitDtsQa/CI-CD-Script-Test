@@ -5,10 +5,10 @@ on:
   #   branches: [main, master]
   pull_request:
     branches: [main, master]
-  fork:
+  # fork:
   workflow_dispatch:
   schedule:
-    - cron: "15 7 * * 5"  
+    - cron: "40 7 * * 5"  
 
 jobs:
   test:
