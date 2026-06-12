@@ -8,7 +8,7 @@ on:
   fork:
   workflow_dispatch:
   schedule:
-    - cron: "0 12 * * 5"  
+    - cron: "40 6 * * 5"  
 
 jobs:
   test:
