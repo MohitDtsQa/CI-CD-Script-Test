@@ -11,7 +11,7 @@ on:
     - cron: "*/5 * * * *"
 
 jobs:
-  test:
+  test1:
     runs-on: ubuntu-latest
     timeout-minutes: 60
 
@@ -26,6 +26,14 @@ jobs:
       - name: Check Node.Js Version
         run: |
           node -v
+
+  test2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       
       - name: Check Python Version
         run: |
@@ -34,11 +42,3 @@ jobs:
       - name: Check Java Version
         run: |
           java -version
-      
-      # - name: Install node package manager
-      #   run: |
-      #     npm install
-      
-      # - name: Start the node server
-      #   run: |
-          # npm start
